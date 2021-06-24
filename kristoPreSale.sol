@@ -13,8 +13,8 @@ contract kristoPreSale is ERC20, Ownable {
     address USDT = 0x8a0E28e6731beBa91605991a3e7360338a5a02b2; //0x6EE856Ae55B6E1A249f04cd3b947141bc146273c
 
     uint256 private lockupStart = now;
-    uint256 private lockupEnd = lockupStart.add(450); // 39312000 Lockup period ends in a year and a quoter
-    uint256 private presaleEnd = lockupStart.add(300); // 5241600 Presale ends in a two months
+    uint256 private lockupEnd = lockupStart.add(216000); // 39312000 Lockup period ends in a year and a quoter
+    uint256 private presaleEnd = lockupStart.add(172800); // 5241600 Presale ends in a two months
 
 
     uint256 private HARD_SUPPLY = 48300000000000; //8000000000000000000000
