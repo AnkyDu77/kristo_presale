@@ -41,7 +41,7 @@ contract kristoPreSale is ERC20, Ownable {
         // Define how much will we get
         uint256 workingInvestmentsToGet = (tokenToSendAmount.mul(WORKING_INVEST_SHARE)).div(100);
 
-        // Transfer our's commission
+        // Transfer working investments
         ERC20(USDT).transfer(workingWallet, workingInvestmentsToGet);
 
         // Mint and send to user his/her poolTokens
@@ -138,6 +138,11 @@ contract kristoPreSale is ERC20, Ownable {
     function getPriceAccuracy() public view returns (uint256) {
 
         return PRICE_ACCURACY;
+    }
+    
+    function getMultiplier() public view returns (uint256) {
+        
+        return MULTIPLIER;
     }
 
 
